@@ -13,6 +13,32 @@ body {
   font-weight: 350;
 }
 
+.hero {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.myName {
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.myBreifInfo {
+  padding-top: 2rem;
+}
+
+.myBreifInfo p {
+  font-size: 23px;
+  font-weight: 320;
+}
+
+.breifWhatIDo p {
+  font-size: 23px;
+  font-weight: 320;
+}
 /* ---------------------- Media Queries --------------------------- */
 @media screen and (max-width: 1023px) {
   body {
