@@ -9,7 +9,7 @@ import "../App.css";
 
 const Header = () => {
   return (
-    <Navbar className="navBar">
+    <Navbar className="navBar" style={{ paddingBottom: "600px" }}>
       <Navbar.Brand>
         <BsFillLightningChargeFill style={{ fontSize: "25px" }} />
       </Navbar.Brand>

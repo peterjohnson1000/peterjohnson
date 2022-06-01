@@ -39,9 +39,33 @@ body {
   font-size: 23px;
   font-weight: 320;
 }
+
+.briefWrapper {
+  margin: 0px 300px !important;
+}
 /* ---------------------- Media Queries --------------------------- */
 @media screen and (max-width: 1023px) {
   body {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .briefWrapper {
+    margin: 0px 200px !important;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .briefWrapper {
+    margin: 0px 0px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    left: 35%;
+    top: 35%;
+    transform: translate(-35%, -35%);
   }
 }
