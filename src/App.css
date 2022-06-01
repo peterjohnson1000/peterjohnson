@@ -1,5 +1,9 @@
 body {
   width: 100%;
+  /* padding: 0 200px; */
+}
+
+.padding-injector {
   padding: 0 200px;
 }
 
@@ -43,10 +47,33 @@ body {
 .briefWrapper {
   margin: 0px 300px !important;
 }
+
+/* SkillSection & SkillCard */
+.skill-section {
+  background-color: #f7f9fb;
+}
+section.skills .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 6rem;
+}
+
+section.skills .card-wrapper .card {
+  background: var(--pure);
+  padding: 3rem 2rem;
+  position: relative;
+  padding-top: 4rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
 /* ---------------------- Media Queries --------------------------- */
 @media screen and (max-width: 1023px) {
   body {
     padding: 0 20px;
+  }
+  section.skills .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -62,10 +89,22 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  section.skills .card-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .hero {
     left: 35%;
     top: 35%;
     transform: translate(-35%, -35%);
+  }
+}
+
+@media (max-width: 390px) {
+  section.contact .input-wrap {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

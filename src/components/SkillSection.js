@@ -1,8 +1,10 @@
+import SkillCard from "./SkillCard";
+
 const SkillSection = () => {
   return (
-    <div>
+    <div className="skill-section">
       <h3>Skills</h3>
-      <p>Cards</p>
+      <SkillCard />
     </div>
   );
 };
