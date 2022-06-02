@@ -6,58 +6,47 @@ const SkillCard = () => {
       <section className="skills">
         <div className="container">
           <div className="card-wrapper">
-            <div className="card">
-              <h2>Web Development</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-0">
+              <h2>Programming Languages</h2>
+              <p>Java</p>
+              <p>Python</p>
+              <p>C/C++</p>
             </div>
 
-            <div className="card">
-              <h2>UI/UX Design</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-1">
+              <h2>Development</h2>
+              <p>React.js</p>
+              <p>CSS</p>
+              <p>JavaScript</p>
+              <p>Google Firebase</p>
+              <p>Heroku</p>
             </div>
 
-            <div className="card">
-              <h2>iOS Development</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-2">
+              <h2>Software & Tools</h2>
+              <p>Git</p>
+              <p>LaTex</p>
             </div>
 
-            <div className="card">
-              <h2>Videography</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-3">
+              <h2>Wireframing & Designing</h2>
+              <p>Figma</p>
+              <p>Adobe XD</p>
             </div>
 
-            <div className="card">
-              <h2>Menotoring</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-4">
+              <h2>Operating Systems</h2>
+              <p>Mac OS</p>
+              <p>Windows</p>
+              <p>Ubuntu</p>
             </div>
 
-            <div className="card">
-              <h2>Guitar</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
-                libero aliquid esse. Assumenda voluptas iusto saepe nam quisquam
-                possimus in.
-              </p>
+            <div className="card card-5">
+              <h2>Content Creation</h2>
+              <p>Youtube @Peter.in</p>
+              <p>Instructor @Udemy</p>
+              <p>Teacher @Skillshare</p>
+              <p>Writer @Dev.to</p>
             </div>
           </div>
         </div>

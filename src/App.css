@@ -1,9 +1,5 @@
 body {
   width: 100%;
-  /* padding: 0 200px; */
-}
-
-.padding-injector {
   padding: 0 200px;
 }
 
@@ -52,22 +48,104 @@ body {
 .skill-section {
   background-color: #f7f9fb;
 }
+.skill-section h3 {
+  font-size: 20px;
+  color: #64748b;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 15px;
+}
+
+.skills {
+  margin-top: 3rem;
+}
 section.skills .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 2rem;
-  grid-row-gap: 6rem;
+  grid-row-gap: 2rem;
 }
 
+.card h2 {
+  font-size: 25px;
+}
 section.skills .card-wrapper .card {
-  background: var(--pure);
-  padding: 3rem 2rem;
   position: relative;
-  padding-top: 4rem;
-  text-align: center;
-  transition: all 0.3s ease;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.card ul {
+  margin-top: 1rem;
+  list-style-type: none;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card-0 {
+  background: rgb(241, 93, 120);
+  background: linear-gradient(
+    180deg,
+    rgba(241, 93, 120, 1) 0%,
+    rgba(179, 113, 225, 1) 100%
+  );
+}
+.card-1 {
+  background: rgb(147, 133, 252);
+  background: linear-gradient(
+    47deg,
+    rgba(147, 133, 252, 1) 0%,
+    rgba(128, 234, 179, 1) 100%
+  );
+}
+.card-2 {
+  background: rgb(159, 69, 146);
+  background: linear-gradient(
+    0deg,
+    rgba(159, 69, 146, 1) 0%,
+    rgba(215, 144, 180, 1) 100%
+  );
+}
+.card-3 {
+  background: rgb(102, 141, 202);
+  background: linear-gradient(
+    86deg,
+    rgba(102, 141, 202, 1) 0%,
+    rgba(158, 215, 244, 1) 100%
+  );
+}
+.card-4 {
+  background: rgb(114, 45, 91);
+  background: linear-gradient(
+    30deg,
+    rgba(114, 45, 91, 1) 0%,
+    rgba(221, 133, 51, 1) 100%
+  );
+}
+.card-5 {
+  background: rgb(145, 61, 95);
+  background: linear-gradient(
+    47deg,
+    rgba(145, 61, 95, 1) 0%,
+    rgba(211, 138, 221, 1) 100%
+  );
 }
 /* ---------------------- Media Queries --------------------------- */
+@media screen and (max-width: 1023px) {
+  body {
+    padding: 0 20px;
+  }
+  section.skills .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media screen and (max-width: 1023px) {
   body {
     padding: 0 20px;
