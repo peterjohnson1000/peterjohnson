@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.css";
-import { Container, Row, Col } from "react-bootstrap";
 const SkillCard = () => {
   return (
     <div>

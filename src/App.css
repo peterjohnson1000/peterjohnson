@@ -1,4 +1,8 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
   width: 100%;
   padding: 0 200px;
 }
@@ -44,7 +48,7 @@ body {
   margin: 0px 300px !important;
 }
 
-/* SkillSection & SkillCard */
+SkillSection & SkillCard
 .skill-section {
   background-color: #f7f9fb;
 }
@@ -137,7 +141,7 @@ section.skills .card-wrapper .card {
     rgba(211, 138, 221, 1) 100%
   );
 }
-/* ---------------------- Media Queries --------------------------- */
+---------------------- Media Queries ---------------------------
 @media screen and (max-width: 1023px) {
   body {
     padding: 0 20px;
@@ -185,4 +189,4 @@ section.skills .card-wrapper .card {
   section.contact .input-wrap {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */

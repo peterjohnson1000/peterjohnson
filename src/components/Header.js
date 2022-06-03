@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap.css";
-import { Nav, Navbar } from "react-bootstrap";
+// import "bootstrap/dist/css/bootstrap.css";
+// import { Nav, Navbar } from "react-bootstrap";
 import {
   BsFillMoonFill,
   BsSunFill,
@@ -9,16 +9,18 @@ import "../App.css";
 
 const Header = () => {
   return (
-    <Navbar className="navBar" style={{ paddingBottom: "600px" }}>
-      <Navbar.Brand>
-        <BsFillLightningChargeFill style={{ fontSize: "25px" }} />
-      </Navbar.Brand>
-      <Nav className="ms-auto navLinks">
-        <Nav.Link style={{ color: "black" }}> Writing </Nav.Link>
-        <Nav.Link style={{ color: "black" }}> About </Nav.Link>
-      </Nav>
-      <BsFillMoonFill />
-    </Navbar>
+    <div className="container flex items-center my-4 justify-between">
+      <div>
+        <BsFillLightningChargeFill />
+      </div>
+      <div className="flex items-center">
+        <a>Writing</a>
+        <a className="pl-10">About</a>
+        <div className="pl-20">
+          <BsFillMoonFill />
+        </div>
+      </div>
+    </div>
   );
 };
 
