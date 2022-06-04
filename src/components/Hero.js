@@ -1,22 +1,23 @@
 const Hero = () => {
   return (
-    <div className="hero">
-      <div className="briefWrapper">
-        <div>
-          <h1 className="myName">Hi, I'm Peter!</h1>
+    <div className="w-screen h-screen flex justify-center text-center">
+      <div className=" my-40 w-128">
+        <div className="pb-10">
+          <h1 className="text-5xl">Hi, I'm Peter!</h1>
         </div>
-        <div className="myBreifInfo">
+        <div className="text-xl font-light pb-5">
           <p>
-            <span>Information Technology </span>
+            <span className="font-normal">Information Technology </span>
             student from Kerala, India. I’m passionate about Web Technologies &
             sharing the knowledge I possess.
           </p>
         </div>
-        <div className="breifWhatIDo">
+        <div className="text-xl font-light">
           <p>
             On the other side I make videos on my YouTube Channel
-            <span> Peter.in</span> & courses as a
-            <span> Skillshare Teacher </span> serving over 3500 Students.
+            <span className="font-normal"> Peter.in</span> & courses as a
+            <span className="font-normal"> Skillshare Teacher </span> serving
+            over 3500 Students.
           </p>
         </div>
       </div>

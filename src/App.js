@@ -8,7 +8,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Hero />
-      <SkillSection />
+      {/* <SkillSection /> */}
     </div>
   );
 };

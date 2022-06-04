@@ -3,7 +3,11 @@ module.exports = {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./components/**/*.{html,js}"],
   },
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        128: "32rem",
+      },
+    },
     colors: {
       primary: "#FFFF",
       secondary: "#f7f9fb",
