@@ -3,16 +3,16 @@ const Hero = () => {
     <div className="w-screen h-screen flex justify-center text-center">
       <div className=" my-40 w-128">
         <div className="pb-10">
-          <h1 className="text-5xl">Hi, I'm Peter!</h1>
+          <h1 className="text-5xl sm:text-4xl">Hi, I'm Peter!</h1>
         </div>
-        <div className="text-xl font-light pb-5">
+        <div className="text-xl font-light pb-5 sm:text-lg px-3">
           <p>
             <span className="font-normal">Information Technology </span>
             student from Kerala, India. I’m passionate about Web Technologies &
             sharing the knowledge I possess.
           </p>
         </div>
-        <div className="text-xl font-light">
+        <div className="text-xl font-light sm:text-lg px-3">
           <p>
             On the other side I make videos on my YouTube Channel
             <span className="font-normal"> Peter.in</span> & courses as a
