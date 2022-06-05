@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors");
+
 module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./components/**/*.{html,js}"],
@@ -7,12 +9,13 @@ module.exports = {
       spacing: {
         128: "32rem",
       },
+      colors: {
+        primaryC: "#FFFF",
+        secondaryC: "#f7f9fb",
+        shC: "#64748B",
+      },
     },
-    colors: {
-      primaryC: "#FFFF",
-      secondaryC: "#f7f9fb",
-      shC: "#64748B",
-    },
+    colors: colors,
     container: {
       center: true,
       screens: {

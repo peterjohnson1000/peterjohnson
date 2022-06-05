@@ -5,7 +5,7 @@ import SkillSection from "./components/SkillSection";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App overflow-hidden">
       <Header />
       <Hero />
       <SkillSection />
