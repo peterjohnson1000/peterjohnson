@@ -14,6 +14,9 @@ module.exports = {
         secondaryC: "#f7f9fb",
         shC: "#64748B",
       },
+      height: {
+        100: "50rem",
+      },
     },
     colors: colors,
     container: {
@@ -30,6 +33,9 @@ module.exports = {
 
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
+
+      xll: { max: "1200px" },
+      // => @media (max-width: 1200px) { ... }
 
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }
