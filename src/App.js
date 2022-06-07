@@ -1,4 +1,5 @@
 import "./App.css";
+import Blog from "./components/Blog";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import SkillSection from "./components/SkillSection";
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <Hero />
       <SkillSection />
+      <Blog />
     </div>
   );
 };
