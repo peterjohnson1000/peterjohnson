@@ -22,7 +22,7 @@ const Blog = () => {
         <h3 className="inline-block px-5 rounded-3xl uppercase bg-primaryC text-shC mx-5 my-10">
           Blogs
         </h3>
-        <div className=" pb-10 grid gap-10 grid-cols-3 grid-rows-2 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1">
+        <div className=" pb-10 grid gap-10 grid-cols-3 grid-rows-1 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1">
           {articles.map((article) => {
             return <BlogCard title={article.title} url={article.url} />;
           })}

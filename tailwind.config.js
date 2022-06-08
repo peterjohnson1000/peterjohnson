@@ -13,6 +13,9 @@ module.exports = {
         primaryC: "#FFFF",
         secondaryC: "#f7f9fb",
         shC: "#64748B",
+        ghC: "#475569",
+        phC: "#F1F5F9",
+        pcC: "#1E293B",
       },
       height: {
         100: "50rem",
