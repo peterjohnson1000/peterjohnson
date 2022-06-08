@@ -3,36 +3,52 @@ import axios from "axios";
 import BlogCard from "./BlogCard";
 
 const Blog = () => {
-  const [blogs, setBlogs] = useState([]);
+  const [articles, setarticles] = useState([]);
 
   const fetchDetails = async () => {
     const response = await axios.get(
       "https://dev.to/api/articles?username=peterjohnson"
     );
-    const dataCollection = response.data;
-    dataCollection.map((blog) => {
-      //thumbnail: blog.cover_image,
-      const title = blog.title;
-      //   console.log(title);
-      //   setBlogs([...blogs, title]);
-      setBlogs([...blogs, { title: title }]);
-      //   setBlogs(title);
-      //   console.log(blogs);
-    });
+    setarticles(response.data);
   };
 
   useEffect(() => {
     fetchDetails();
   }, []);
 
-  //   blogs.map((blog) => {
-  //     console.log(blog.title);
-  //   });
-
   return (
-    <div>
-      <BlogCard />
+    <div className="bg-secondaryC">
+      <div className="container">
+        <h3 className="inline-block px-5 rounded-3xl uppercase bg-primaryC text-shC mx-5 my-10">
+          Blogs
+        </h3>
+        <div className=" pb-10 grid gap-10 grid-cols-3 grid-rows-2 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1">
+          {articles.map((article) => {
+            return <BlogCard title={article.title} url={article.url} />;
+          })}
+        </div>
+      </div>
     </div>
+
+    // <div className="articles">
+    //   {articles.map((article) => {
+    //     return (
+    //       <div key={article.id} className="article">
+    //         <a href={article.url} className="title">
+    //           {article.title}
+    //         </a>
+    //         <img src={article.social_image} alt={article.title}></img>
+    //         <p>
+    //           {article.description} <a href={article.url}>Read More.</a>
+    //         </p>
+    //         <p>
+    //           {article.readable_publish_date} | {article.tags}{" "}
+    //         </p>
+    //         <p> {article.public_reactions_count} reactions</p>
+    //       </div>
+    //     );
+    //   })}
+    // </div>
   );
 };
 
