@@ -14,8 +14,12 @@ const Header = () => {
         <BsFillLightningChargeFill />
       </div>
       <div className="flex items-center">
-        <a>Writing</a>
-        <a className="pl-5">About</a>
+        <a className="cursor-pointer link link-underline link-underline-black">
+          Writing
+        </a>
+        <a className="ml-5 cursor-pointer link link-underline link-underline-black">
+          About
+        </a>
         <div className="pl-20 sm:pl-8">
           <BsFillMoonFill />
         </div>

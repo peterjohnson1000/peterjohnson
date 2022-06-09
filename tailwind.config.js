@@ -16,6 +16,7 @@ module.exports = {
         ghC: "#475569",
         phC: "#F1F5F9",
         pcC: "#1E293B",
+        fC: "#334155",
       },
       height: {
         100: "50rem",
@@ -48,6 +49,9 @@ module.exports = {
 
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
+
+      smm: { max: "415px" },
+      // => @media (max-width: 415px) { ... }
     },
   },
   plugins: [],

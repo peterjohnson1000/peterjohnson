@@ -3,6 +3,7 @@ import Blog from "./components/Blog";
 import Github from "./components/Github";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 import SkillSection from "./components/SkillSection";
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <SkillSection />
       <Blog />
       <Github />
+      <Footer />
     </div>
   );
 };
