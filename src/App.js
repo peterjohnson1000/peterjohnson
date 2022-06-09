@@ -8,7 +8,7 @@ import SkillSection from "./components/SkillSection";
 
 const App = () => {
   return (
-    <div className="App overflow-hidden">
+    <div className="App overflow-hidden dark:bg-dPrimary dark:text-primaryC">
       <Header />
       <Hero />
       <SkillSection />

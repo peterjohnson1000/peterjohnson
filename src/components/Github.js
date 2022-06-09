@@ -2,16 +2,16 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Github = () => {
   return (
-    <div className="bg-primaryC">
+    <div className="bg-primaryC dark:bg-dSecondary dark:text-primaryC">
       <div className="container pb-20">
         <div className="flex justify-between">
           <div>
-            <h3 className="inline-block px-5 rounded-3xl uppercase bg-secondaryC text-ghC mx-5 my-10">
+            <h3 className="inline-block px-5 rounded-3xl uppercase bg-secondaryC text-ghC mx-5 my-10 dark:bg-dHeading dark:text-dHeadingC">
               Projects
             </h3>
           </div>
           <div className="flex items-center pr-5">
-            <h3 className="pr-2 cursor-pointer text-ghC link link-underline link-underline-black">
+            <h3 className="pr-2 cursor-pointer text-ghC link link-underline link-underline-black dark:text-dHeadingC">
               <a href="https://github.com/peterjohnson1000" target="_blank">
                 Github
               </a>
@@ -43,7 +43,7 @@ const Github = () => {
             </p>
           </div>
 
-          <div className="bg-phC text-pcC p-5 rounded-lg md:h-52">
+          <div className="bg-phC text-pcC p-5 rounded-lg md:h-52 dark:bg-dPrimary dark:text-primaryC">
             <div className="flex justify-between">
               <h2 className="text-2xl pb-5">todoapp-react</h2>
               {/* <h2 className="inline-block h-6 px-5 pb-6 rounded-3xl uppercase bg-primaryC text-shC mx-5">

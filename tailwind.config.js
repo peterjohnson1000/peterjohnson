@@ -4,6 +4,7 @@ module.exports = {
   purge: {
     content: ["./src/**/*.{js,jsx,ts,tsx}", "./components/**/*.{html,js}"],
   },
+  darkMode: "class",
   theme: {
     extend: {
       spacing: {
@@ -17,6 +18,10 @@ module.exports = {
         phC: "#F1F5F9",
         pcC: "#1E293B",
         fC: "#334155",
+        dPrimary: "#0e1526",
+        dSecondary: "#1c2739",
+        dHeading: "#18142c",
+        dHeadingC: "#94A3B8",
       },
       height: {
         100: "50rem",

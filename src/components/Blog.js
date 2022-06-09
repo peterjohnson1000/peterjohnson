@@ -17,9 +17,9 @@ const Blog = () => {
   }, []);
 
   return (
-    <div className="bg-secondaryC">
+    <div className="bg-secondaryC dark:bg-dSecondary dark:text-primaryC">
       <div className="container">
-        <h3 className="inline-block px-5 rounded-3xl uppercase bg-primaryC text-shC mx-5 my-10">
+        <h3 className="inline-block px-5 rounded-3xl uppercase bg-primaryC text-shC mx-5 my-10 dark:bg-dHeading dark:text-dHeadingC">
           Blogs
         </h3>
         <div className=" pb-10 grid gap-10 grid-cols-3 grid-rows-1 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1">
