@@ -32,7 +32,7 @@ const SkillCard = () => {
               <p>Adobe XD</p>
             </div>
 
-            <div className="bg-gradient-to-l from-gray-700 via-gray-900 to-black p-5 rounded-lg md:h-52">
+            <div className="bg-gradient-to-l from-gray-700 via-gray-900 to-black p-5 rounded-lg md:h-52 dark:bg-gradient-to-r dark:from-fuchsia-600 dark:to-pink-600">
               <h2 className="text-2xl pb-5">Operating Systems</h2>
               <p>Mac OS</p>
               <p>Windows</p>

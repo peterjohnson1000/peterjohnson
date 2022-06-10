@@ -9,7 +9,7 @@ import DarkMode from "../hooks/DarkMode";
 const Header = () => {
   const [setTheme, colorTheme] = DarkMode();
   return (
-    <div className="container flex items-center py-4 justify-between text-xl sm:text-lg px-10 dark:bg-dPrimary dark:text-primaryC">
+    <div className="container  flex items-center py-4 justify-between text-xl sm:text-lg px-10 dark:bg-dPrimary dark:text-primaryC">
       <div>
         <BsFillLightningChargeFill />
       </div>
