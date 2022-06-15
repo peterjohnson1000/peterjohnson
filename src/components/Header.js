@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   BsFillMoonFill,
   BsSunFill,
@@ -5,6 +6,7 @@ import {
 } from "react-icons/bs";
 import "../App.css";
 import DarkMode from "../hooks/DarkMode";
+import Blog from "./Blog";
 
 const Header = () => {
   const [setTheme, colorTheme] = DarkMode();
