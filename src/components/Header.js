@@ -20,7 +20,7 @@ const Header = () => {
           Writing
         </a>
         <a className="ml-5 cursor-pointer link link-underline link-underline-black">
-          About
+          <Link to="/about">About</Link>
         </a>
         <div className="pl-20 sm:pl-8" onClick={() => setTheme(colorTheme)}>
           {colorTheme === "light" ? <BsSunFill /> : <BsFillMoonFill />}

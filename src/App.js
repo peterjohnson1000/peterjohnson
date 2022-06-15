@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Blog from "./components/Blog";
 import Github from "./components/Github";
@@ -10,14 +10,24 @@ import About from "./components/About";
 
 const App = () => {
   return (
-    <div className="App overflow-hidden dark:bg-dPrimary dark:text-primaryC">
-      <Header />
-      <Hero />
-      <SkillSection />
-      <Blog />
-      <Github />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App overflow-hidden dark:bg-dPrimary dark:text-primaryC">
+        <Routes>
+          <Route
+            path="/"
+            element={[
+              <Header />,
+              <Hero />,
+              <SkillSection />,
+              <Blog />,
+              <Github />,
+              <Footer />,
+            ]}
+          />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 
