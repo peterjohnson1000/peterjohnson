@@ -3,7 +3,7 @@ const SkillCard = () => {
     <div>
       <section className="container pb-10">
         <div className="">
-          <div className="grid gap-10 grid-cols-3 grid-rows-2 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1">
+          <div className="grid gap-10 grid-cols-3 grid-rows-2 text-primaryC px-5 sm:grid-cols-1 xll:grid-cols-2 md:grid-cols-1 sm:gap-2">
             <div className="bg-gradient-to-l from-green-500 to-green-700 p-5 rounded-lg md:h-52">
               <h2 className="text-2xl pb-5">Programming Languages</h2>
               <p>Java</p>

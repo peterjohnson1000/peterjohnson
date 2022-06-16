@@ -2,12 +2,18 @@ const About = () => {
   return (
     <div className="container px-10">
       <h1 className="text-5xl py-10 font-semibold">About</h1>
-      <div className="flex">
-        <div className="pr-5 max-w-xs md:h-52">
-          <img src="./image/myPhoto.JPG" className="w-80 rounded-2xl" />
+      <div className="flex xll:flex-col">
+        <div className="pr-5 max-w-xs">
+          <img
+            src="./image/myPhoto.JPG"
+            alt="myphoto"
+            className="w-80 rounded-2xl"
+          />
         </div>
-        <div className="p-5 md:h-52 max-w-2xl">
-          <h2 className="text-3xl font-semibold pb-5">Hi, I'm Peter!</h2>
+        <div className="p-5 max-w-2xl sm:p-0 xll:max-w-5xl xll:p-0 xll:pt-5">
+          <h2 className="text-3xl font-semibold pb-5 sm:pt-5">
+            Hi, I'm Peter!
+          </h2>
           <p className="text-2xl font-light">
             I'm a Information Technology undergraduate from Kerala, India. I’m
             passionate about Web Technologies & sharing the knowledge I possess.
