@@ -12,11 +12,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App overflow-hidden dark:bg-dPrimary dark:text-primaryC">
+        <Header />
         <Routes>
           <Route
             path="/"
             element={[
-              <Header />,
               <Hero />,
               <SkillSection />,
               <Blog />,
