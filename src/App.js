@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Blog from "./components/Blog";
 import Github from "./components/Github";
@@ -9,6 +10,10 @@ import SkillSection from "./components/SkillSection";
 import About from "./components/About";
 
 const App = () => {
+  const [image, setImage] = useState("");
+  useEffect(() => {
+    setImage("./image/myPhoto.JPG");
+  }, []);
   return (
     <BrowserRouter>
       <div className="App overflow-hidden dark:bg-dPrimary dark:text-primaryC">
@@ -24,7 +29,7 @@ const App = () => {
               <Footer />,
             ]}
           />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<About image={image} />} />
         </Routes>
       </div>
     </BrowserRouter>
