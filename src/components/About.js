@@ -1,14 +1,13 @@
+import { useEffect, useState } from "react";
+
 const About = () => {
+  const [image] = useState("./image/myPhoto.JPG");
   return (
     <div className="container px-10">
       <h1 className="text-5xl py-10 font-semibold">About</h1>
       <div className="flex xll:flex-col">
         <div className="pr-5 max-w-xs">
-          <img
-            src="./image/myPhoto.JPG"
-            alt="myphoto"
-            className="w-80 rounded-2xl"
-          />
+          <img src={image} alt="myphoto" className="w-80 rounded-2xl" />
         </div>
         <div className="p-5 max-w-2xl sm:p-0 xll:max-w-5xl xll:p-0 xll:pt-5">
           <h2 className="text-3xl font-semibold pb-5 sm:pt-5">
