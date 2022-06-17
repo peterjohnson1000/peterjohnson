@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
 const About = () => {
-  const [image] = useState("./image/myPhoto.JPG");
+  const [image, setImage] = useState("");
+  useEffect(() => {
+    setImage("./image/myPhoto.JPG");
+  }, []);
   return (
     <div className="container px-10">
       <h1 className="text-5xl py-10 font-semibold">About</h1>
