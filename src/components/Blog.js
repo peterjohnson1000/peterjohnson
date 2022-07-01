@@ -14,14 +14,13 @@ const Blog = () => {
   //   });
   // };
 
-  const fetchDetails = async () => {
-    const response = await axios.get(
-      "https://dev.to/api/articles?username=peterjohnson&state=all"
-    );
-    setarticles(response.data);
-  };
-
   useEffect(() => {
+    const fetchDetails = async () => {
+      const response = await axios.get(
+        "https://dev.to/api/articles?username=peterjohnson&state=all"
+      );
+      setarticles(response.data);
+    };
     fetchDetails();
   }, []);
 
