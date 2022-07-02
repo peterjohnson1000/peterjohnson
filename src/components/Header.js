@@ -13,7 +13,6 @@ const Header = () => {
   return (
     <div className="container flex items-center py-4 justify-between text-xl sm:text-lg px-10 dark:bg-dPrimary dark:text-primaryC">
       <div>
-        {/* <BsFillLightningChargeFill /> */}
         <Link to="/">
           <BsFillLightningChargeFill />
         </Link>

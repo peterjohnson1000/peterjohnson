@@ -7,20 +7,14 @@ const Blog = () => {
   const blogSectionRef = useRef(null);
   const [articles, setarticles] = useState([]);
 
-  // const goToBlogSection = () => {
-  //   window.scrollTo({
-  //     top: blogSection.current.offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
+  const fetchDetails = async () => {
+    const response = await axios.get(
+      "https://dev.to/api/articles?username=peterjohnson&state=all"
+    );
+    setarticles(response.data);
+  };
 
   useEffect(() => {
-    const fetchDetails = async () => {
-      const response = await axios.get(
-        "https://dev.to/api/articles?username=peterjohnson&state=all"
-      );
-      setarticles(response.data);
-    };
     fetchDetails();
   }, []);
 
@@ -33,7 +27,6 @@ const Blog = () => {
         <div className="flex justify-between">
           <div>
             <h3 className="inline-block px-5 rounded-3xl uppercase bg-primaryC text-shC mx-5 my-10 dark:bg-dHeading dark:text-dHeadingC">
-              {/* Blogs */}
               {articles == "" ? "Fetching data" : "Blogs"}
             </h3>
           </div>
