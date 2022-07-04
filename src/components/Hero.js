@@ -20,6 +20,18 @@ const Hero = () => {
             {Data[0].serving}
           </p>
         </div>
+        <div className="text-xl mt-7 font-light sm:text-lg px-3">
+          <p>
+            Currently working on :
+            <a
+              className="font-bold cursor-pointer pl-1"
+              href="https://gestify.netlify.app/"
+              target="_blank"
+            >
+              Gestify.
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
